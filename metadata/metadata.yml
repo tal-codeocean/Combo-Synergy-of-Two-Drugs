@@ -1,0 +1,75 @@
+metadata_version: 1
+name: Combo Synergy of Two Drugs
+description: |-
+  Combination drug therapy is a widely used paradigm for managing numerous human
+  malignancies. In cancer treatment, additive and/or synergistic drug combinations can convert
+  weakly efficacious monotherapies into regimens that produce robust anti-tumor activity. This can
+  be explained in part through pathway interdependencies that are critical for cancer cell
+  proliferation and survival. However, identification of the various interdependencies is difficult
+  due to the complex molecular circuitry that underlies tumor development and progression. Here,
+  we present a high-throughput platform that allows for an unbiased identification of synergistic
+  and efficacious drug combinations. In a screen of 22,737 experiments of 583 doublet
+  combinations in 39 diverse cancer cell lines using a 4 by 4 dosing regimen, both well-known and
+  novel synergistic and efficacious combinations were identified. Here, we present an example of
+  one such novel combination, a Wee1 inhibitor (AZD1775) and an mTOR inhibitor
+  (ridaforolimus), and demonstrate that the combination potently and synergistically inhibits
+  cancer cell growth in vitro and in vivo. This approach has identified novel combinations that
+  would be difficult to reliably predict based purely on our current understanding of cancer cell
+  biology.
+tags:
+- synergistic-drug-combinations
+- cancer-cell-biology
+authors:
+- name: Jennifer O’Neil
+  affiliations:
+  - name: Merck Research Laboratories
+- name: Yair Benita
+  affiliations:
+  - name: Merck Research Laboratories
+- name: Igor Feldman
+  affiliations:
+  - name: Merck Research Laboratories
+- name: Melissa Chenard
+  affiliations:
+  - name: Merck Research Laboratories
+- name: Brian Roberts
+  affiliations:
+  - name: Merck Research Laboratories
+- name: Yaping Liu
+  affiliations:
+  - name: Merck Research Laboratories
+- name: Jing Li
+  affiliations:
+  - name: Merck Research Laboratories
+- name: Astrid Kral
+  affiliations:
+  - name: Merck Research Laboratories
+- name: Serguei Lejnine
+  affiliations:
+  - name: Merck Research Laboratories
+- name: Andrey Loboda
+  affiliations:
+  - name: Merck Research Laboratories
+- name: William Arthur
+  affiliations:
+  - name: Merck Research Laboratories
+- name: Razvan Cristescu
+  affiliations:
+  - name: Merck Research Laboratories
+- name: Brian B. Haines
+  affiliations:
+  - name: Merck Research Laboratories
+- name: Christopher Winter
+  affiliations:
+  - name: Merck Research Laboratories
+- name: Theresa Zhang
+  affiliations:
+  - name: Merck Research Laboratories
+- name: Andrew Bloecher
+  affiliations:
+  - name: Merck Research Laboratories
+- name: Stuart D. Shumway
+  affiliations:
+  - name: Merck Research Laboratories
+corresponding_contributor:
+  name: Jennifer O’Neil, Ph.D.
