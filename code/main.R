@@ -19,7 +19,7 @@ make.plot<-function(drugA, drugB, cell){
 		hsa<-matrix(data[,"HSA"], nrow=4, ncol=4, byrow=TRUE)
 		bliss<-matrix(data[,"Bliss"], nrow=4, ncol=4, byrow=TRUE)
 
-		p<-plot_ly(z=observed.data, type="surface", colors="Blue", opacity=0.4) %>%
+		p<-plot_ly(z=observed.data, type="surface", colors="Blue", opacity=0.4, , showscale=FALSE) %>%
 		add_trace(x=b.conc, y=a.conc, z=data$x2x0, type="scatter3d", marker=list(color="rgb(5, 10, 172)"), opacity=0.99, mode="markers", name="Observed Data") %>%
 		add_trace(z=hsa, type="surface", colors="Red", opacity=0.4) %>%
 		add_trace(x=b.conc, y=a.conc, z=data$HSA, type="scatter3d", marker=list(color="rgb(255, 0, 0)"), opacity=0.99, mode="markers", name="Predicted (HSA)") %>%
