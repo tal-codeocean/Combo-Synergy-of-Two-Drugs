@@ -19,11 +19,11 @@ make.plot<-function(drugA, drugB, cell){
 		hsa<-matrix(data[,"HSA"], nrow=4, ncol=4, byrow=TRUE)
 		bliss<-matrix(data[,"Bliss"], nrow=4, ncol=4, byrow=TRUE)
 
-		p<-plot_ly(z=observed.data, type="surface", colors="Blue", opacity=0.99, showscale=FALSE, zmin=0, zmax=1) %>%
+		p<-plot_ly(z=observed.data, type="surface", colors="Blue", opacity=0.4, showscale=FALSE, zmin=0, zmax=1) %>%
 		add_trace(x=b.conc, y=a.conc, z=data$x2x0, type="scatter3d", marker=list(color="rgb(5, 10, 172)"), opacity=0.99, mode="markers", name="Observed Data") %>%
-		add_trace(z=hsa, type="surface", colors="Red", opacity=0.99, showscale=FALSE) %>%
+		add_trace(z=hsa, type="surface", colors="Red", opacity=0.4, showscale=FALSE) %>%
 		add_trace(x=b.conc, y=a.conc, z=data$HSA, type="scatter3d", marker=list(color="rgb(255, 0, 0)"), opacity=0.99, mode="markers", name="Predicted (HSA)") %>%
-		add_trace(z=bliss, type="surface", colors="Green", opacity=0.99, showscale=FALSE) %>%
+		add_trace(z=bliss, type="surface", colors="Green", opacity=0.4, showscale=FALSE) %>%
 		add_trace(x=b.conc, y=a.conc, z=data$Bliss, type="scatter3d", marker=list(color="rgb(78, 190, 0)"), opacity=0.99, mode="markers", name="Predicted (Bliss)") %>%
 			layout(title = paste(drugA, "&", drugB, "Combination"),
 				scene = list(
@@ -32,7 +32,7 @@ make.plot<-function(drugA, drugB, cell){
 					yaxis = list(title = "drugB concentration", tickvals=c(0,1,2,3), ticktext=drugB_conc), 
 					aspectratio=list(x=1, y=1, z=1)))
 	
-		htmlwidgets::saveWidget(as.widget(p), "/output/plot.html")
+		htmlwidgets::saveWidget(as_widget(p), "/output/plot.html")
 
 			}
 	else {
